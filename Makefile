@@ -1,5 +1,8 @@
 MANAGE := poetry run python manage.py
 
+dev:
+	poetry run python manage.py runserver
+
 .PHONY: test
 test:
 	@poetry run pytest
